@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:chatbot/print_channel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:resources/resources.dart';
@@ -38,13 +39,14 @@ class ChatBotAppbar extends StatelessWidget implements PreferredSizeWidget {
               ),
               trailing: IconButton(
                 onPressed: () {
+                  PrintChannel.callNativeMethod();
                   print("Popup method called.");
                   Navigator.of(context).pop();
                 },
                 icon: const Icon(
                   Icons.close,
                   size: 38,
-                  color: Colors.white,
+                  color: Colors.red,
                 ),
               ),
               subtitle: Text(
