@@ -2,7 +2,7 @@ import 'package:flutter/services.dart';
 
 const MethodChannel _channel = MethodChannel('com.ra.print.channel');
 
-class PrintChannel {
+class Channel {
   static void callNativeMethod() {
     try {
       _channel.invokeMethod(

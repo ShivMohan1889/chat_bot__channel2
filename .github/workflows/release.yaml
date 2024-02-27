@@ -91,7 +91,7 @@ jobs:
 
       - name: "Create pod"
         run: |
-          pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings   
+          pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose 
 
       
 
