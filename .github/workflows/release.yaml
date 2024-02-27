@@ -90,6 +90,9 @@ jobs:
           pod trunk register shivmhnsingh@gmail.com 'Shiv' --description='GitHub Actions'   
 
       - name: "Create pod"
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      
         run: |
           pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose 
 
