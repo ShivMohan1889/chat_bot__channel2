@@ -93,7 +93,7 @@ jobs:
 
       - name: "Create pod"
         env:
-          cocoa_token: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          cocoa_token: ${{ secrets }}
       
         run: |
            echo "CocoaPods Trunk Token: $cocoa_token"
