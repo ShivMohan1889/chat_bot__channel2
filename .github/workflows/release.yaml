@@ -27,6 +27,7 @@ jobs:
       - name: Check a new tag
         id: tag
         run: |
+          echo "COCOAPODS_TRUNK_TOKEN : ${{ secrets.COCOAPODS_TRUNK_TOKEN }}  "
           export TAG_VERSION=$(grep version pubspec.yaml |  awk -F  ': ' '{print $2}')
           echo "version=$TAG_VERSION" >> $GITHUB_OUTPUT
           echo $TAG_VERSION
