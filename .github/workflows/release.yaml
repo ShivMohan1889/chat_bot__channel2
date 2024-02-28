@@ -93,10 +93,10 @@ jobs:
 
       - name: "Create pod"
         env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          cocoa_token: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       
         run: |
-          echo $COCOAPODS_TRUNK_TOKEN
+           echo "CocoaPods Trunk Token: $cocoa_token"
         #  pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose
 
 
