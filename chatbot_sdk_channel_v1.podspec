@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.platforms        = { :ios => '13.0' }
   s.source           = { :git => 'https://github.com/ShivMohan1889/chat_bot__channel2.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
-  s.ios.vendored_frameworks = 'Frameworks/Debug/App.xcframework','Frameworks/Debug/Flutter.xcframework','Frameworks/Debug/FlutterPluginRegistrant.xcframework','Frameworks/Debug/path_provider_foundation.xcframework','Frameworks/Debug/shared_preferences_foundation.xcframework','Frameworks/Debug/sqflite.xcframework','Frameworks/Debug/url_launcher_ios.xcframework','Frameworks/Debug/webview_flutter_wkwebview.xcframework' 
+  # s.ios.vendored_frameworks = 'Frameworks/Debug/App.xcframework','Frameworks/Debug/Flutter.xcframework','Frameworks/Debug/FlutterPluginRegistrant.xcframework','Frameworks/Debug/path_provider_foundation.xcframework','Frameworks/Debug/shared_preferences_foundation.xcframework','Frameworks/Debug/sqflite.xcframework','Frameworks/Debug/url_launcher_ios.xcframework','Frameworks/Debug/webview_flutter_wkwebview.xcframework' 
 
 end

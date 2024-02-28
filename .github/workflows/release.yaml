@@ -78,9 +78,9 @@ jobs:
           cd .ios
           perl -i -p0e 's/shellScript = "\/bin\/sh \\"\$FLUTTER_ROOT\/packages\/flutter_tools\/bin\/xcode_backend\.sh\\" build";/shellScript = "\/bin\/sh \\"\$FLUTTER_ROOT\/packages\/flutter_tools\/bin\/xcode_backend\.sh\\" build\\n\/bin\/sh \\"\$FLUTTER_ROOT\/packages\/flutter_tools\/bin\/xcode_backend\.sh\\" embed\\n";/s' ./Runner.xcodeproj/project.pbxproj
 
-      - name: "Build Frameworks"
-        run: |
-          flutter build ios-framework --output=Frameworks --no-profile
+      # - name: "Build Frameworks"
+      #   run: |
+      #     flutter build ios-framework --output=Frameworks --no-profile
 
       - name: "Update podspce file"
         run: |
@@ -97,7 +97,7 @@ jobs:
       
         run: |
           echo $COCOAPODS_TRUNK_TOKEN
-          pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose
+        #  pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose
 
 
       
