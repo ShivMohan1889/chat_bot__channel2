@@ -19,7 +19,7 @@ jobs:
       tag: ${{ steps.tag.outputs.version }}
     steps:
       - name: "tokens"
-        run: echo ${{ secrets }}
+        run: echo ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
   #     - name: 'Checkout'
   #       uses: actions/checkout@v3
   #       with:
