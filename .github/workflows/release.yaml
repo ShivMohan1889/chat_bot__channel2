@@ -42,6 +42,7 @@ jobs:
 
   xcframeworks:
     # if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'release/')
+    # pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose 
     runs-on: macos-latest
     needs: release
     steps:
@@ -94,7 +95,8 @@ jobs:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       
         run: |
-          pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose 
+          pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose --token=YOUR_AUTH_TOKEN
+
 
       
 
