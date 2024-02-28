@@ -96,7 +96,7 @@ jobs:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       
         run: |
-          echo COCOAPODS_TRUNK_TOKEN
+          echo $COCOAPODS_TRUNK_TOKEN
           pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose
 
 
