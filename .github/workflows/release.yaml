@@ -1,9 +1,12 @@
 name: Publish
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [created]
+# on:
+#   push:
+#     branches:
+#       - main
     # types:
     #   - closed
 
