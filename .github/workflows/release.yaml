@@ -86,13 +86,14 @@ jobs:
         run: |
           version=$(grep 'version:' pubspec.yaml | awk '{print $2}') awk -v new_version="$version" '  /s.version          =/ {$3 = "'"'"'" new_version "'"'"'"} 1' chatbot_sdk_channel_v1.podspec > temp && mv temp chatbot_sdk_channel_v1.podspec
 
-      # - name: "Register session"
-      #   run: |
-      #     pod trunk register shivmhnsingh@gmail.com 'Shiv' --description='GitHub Actions'   
+      - name: "Register session"
+        run: |
+          pod trunk register shivmhnsingh@gmail.com 'Shiv' --description='GitHub Actions'   
+          pod trunk me
 
       - name: "Create pod"
-        env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        # env:
+        #   COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       
         run: |
           pod trunk push chatbot_sdk_channel_v1.podspec --allow-warnings --verbose
