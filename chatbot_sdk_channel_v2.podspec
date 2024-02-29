@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name             = 'chatbot_sdk_channel_v1'
-  s.module_name      = 'chatbot_sdk_channel_v1'
+  s.name             = 'chatbot_sdk_channel_v2'
+  s.module_name      = 'chatbot_sdk_channel_v2'
 
 
   #don't add tabs on this next line or change add spacing 
@@ -10,7 +10,7 @@ s.version = '2.2.6'
   s.description      = 'Your Pod Description'
   s.homepage         = 'https://github.com/ShivMohan1889/chat_bot__channel2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Your Name' => 'your@email.com' }
+  s.author           = { 'Your Name' => 'shivmhnsingh@gmail.com' }
   s.platforms        = { :ios => '13.0' }
   s.source           = { :git => 'https://github.com/ShivMohan1889/chat_bot__channel2.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
