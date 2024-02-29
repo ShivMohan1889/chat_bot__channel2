@@ -4,12 +4,12 @@ Pod::Spec.new do |s|
 
 
   #don't add tabs on this next line or change add spacing 
-s.version = '2.2.6'
+s.version = '2.2.9'
 
   s.summary          = 'Your Pod Summary'
   s.description      = 'Your Pod Description'
   s.homepage         = 'https://github.com/ShivMohan1889/chat_bot__channel2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = "MIT"
   s.author           = { 'Your Name' => 'shivmhnsingh@gmail.com' }
   s.platforms        = { :ios => '13.0' }
   s.source           = { :git => 'https://github.com/ShivMohan1889/chat_bot__channel2.git', :tag => s.version.to_s }
